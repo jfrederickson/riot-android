@@ -748,11 +748,6 @@ public class NotificationUtils {
             builder.setColor(Color.TRANSPARENT);
         }
 
-        try {
-            builder.extend(new NotificationCompat.WearableExtender());
-        } catch (Exception e) {
-            Log.e(LOG_TAG, "## buildMessageNotification() : WearableExtender failed " + e.getMessage());
-        }
 
         Notification n = builder.build();
 
